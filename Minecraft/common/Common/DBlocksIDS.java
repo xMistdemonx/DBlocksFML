@@ -1,5 +1,7 @@
 package DBlocks.Common;
 
+import net.minecraft.src.Item;
+
 
 public class DBlocksIDS {
 	
@@ -31,12 +33,12 @@ public class DBlocksIDS {
 	public static int DarkStoneBrickSlab_ID;
 	public static int DarkStoneBrickDSlab_ID;
 	
-	//public static int LightStoneSlab_ID;
-	//public static int LightStoneDSlab_ID;
-	//public static int LightCobbleStoneSlab_ID;
-	//public static int LightCobbleStoneDSlab_ID;
-	//public static int LightStoneBrickSlab_ID;
-	//public static int LightStoneBrickDSlab_ID;
+	public static int LightStoneSlab_ID;
+	public static int LightStoneDSlab_ID;
+	public static int LightCobbleStoneSlab_ID;
+	public static int LightCobbleStoneDSlab_ID;
+	public static int LightStoneBrickSlab_ID;
+	public static int LightStoneBrickDSlab_ID;
 	
 	
 	
@@ -54,4 +56,23 @@ public class DBlocksIDS {
 	
 	//Item IDS
 	public static int AmethystDust_ID;
+	public static int AzurDust_ID;
+	public static int CitrineDust_ID;
+	public static int Plank_ID;
+	public static int WoodFrameStrip_ID;
+	public static int WoodFrame_ID;
+	public static int LampFrame_ID;
+	
+	
+	public static int DSP_ID;
+	public static int DSA_ID;
+	public static int DSH_ID;
+	public static int DSS_ID;
+	public static int DSSw_ID;
+	
+	public static int LSP_ID;
+	public static int LSA_ID;
+	public static int LSH_ID;
+	public static int LSS_ID;
+	public static int LSSw_ID;
 }

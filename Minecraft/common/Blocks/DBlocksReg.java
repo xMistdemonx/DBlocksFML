@@ -32,19 +32,19 @@ public class DBlocksReg
 	
 	
 	//SLABZ---------------------------------
-	//public static Block DarkStoneSlab;
-	//public static Block DarkStoneDSlab;
-	//public static Block DarkCobbleStoneSlab;
-	//public static Block DarkCobbleStoneDSlab;
-	//public static Block DarkStoneBrickSlab;
-	//public static Block DarkStoneBrickDSlab;
+	public static Block DarkStoneSlab;
+	public static Block DarkStoneDSlab;
+	public static Block DarkCobbleStoneSlab;
+	public static Block DarkCobbleStoneDSlab;
+	public static Block DarkStoneBrickSlab;
+	public static Block DarkStoneBrickDSlab;
 
-	//public static Block LightStoneSlab;
-	//public static Block LightStoneDSlab;
-	//public static Block LightCobbleStoneSlab;
-	//public static Block LightCobbleStoneDSlab;
-	//public static Block LightStoneBrickSlab;
-	//public static Block LightStoneBrickDSlab;
+	public static Block LightStoneSlab;
+	public static Block LightStoneDSlab;
+	public static Block LightCobbleStoneSlab;
+	public static Block LightCobbleStoneDSlab;
+	public static Block LightStoneBrickSlab;
+	public static Block LightStoneBrickDSlab;
 	
 	
 	
@@ -92,21 +92,21 @@ public class DBlocksReg
 		
 		
 		//SLABZ----------------------------------------------------------------
-		//DarkStoneSlab = (new SLABZ(DBlocksIDS.DarkStoneSlab_ID, 1, false, DBlocksIDS.DarkStoneSlab_ID, DBlocksIDS.DarkStoneDSlab_ID));
-		//DarkStoneDSlab = (new SLABZ(DBlocksIDS.DarkStoneDSlab_ID, 1, true, DBlocksIDS.DarkStoneSlab_ID, DBlocksIDS.DarkStoneDSlab_ID));
-		//DarkCobbleStoneSlab = (new SLABZ(DBlocksIDS.DarkCobbleStoneSlab_ID, 18, false, DBlocksIDS.DarkCobbleStoneSlab_ID, DBlocksIDS.DarkCobbleStoneDSlab_ID));
-		//DarkCobbleStoneDSlab = (new SLABZ(DBlocksIDS.DarkCobbleStoneDSlab_ID, 18, true, DBlocksIDS.DarkCobbleStoneSlab_ID, DBlocksIDS.DarkCobbleStoneDSlab_ID));
-		//DarkStoneBrickSlab = (new SLABZ(DBlocksIDS.DarkStoneBrickSlab_ID,34, false, DBlocksIDS.DarkStoneBrickSlab_ID, DBlocksIDS.DarkStoneBrickDSlab_ID));
-		//DarkStoneBrickDSlab = (new SLABZ(DBlocksIDS.DarkStoneBrickDSlab_ID, 34, true, DBlocksIDS.DarkStoneBrickSlab_ID, DBlocksIDS.DarkStoneBrickDSlab_ID));
+		DarkStoneSlab = (new SLABZ(DBlocksIDS.DarkStoneSlab_ID, 1, false, DBlocksIDS.DarkStoneSlab_ID, DBlocksIDS.DarkStoneDSlab_ID).setBlockName("DarkStone Slab"));
+		DarkStoneDSlab = (new SLABZ(DBlocksIDS.DarkStoneDSlab_ID, 1, true, DBlocksIDS.DarkStoneSlab_ID, DBlocksIDS.DarkStoneDSlab_ID).setBlockName("DarkStone DoubleSlab"));
+		DarkCobbleStoneSlab = (new SLABZ(DBlocksIDS.DarkCobbleStoneSlab_ID, 17, false, DBlocksIDS.DarkCobbleStoneSlab_ID, DBlocksIDS.DarkCobbleStoneDSlab_ID).setBlockName("DarkCobble Stone Slab"));
+		DarkCobbleStoneDSlab = (new SLABZ(DBlocksIDS.DarkCobbleStoneDSlab_ID, 17, true, DBlocksIDS.DarkCobbleStoneSlab_ID, DBlocksIDS.DarkCobbleStoneDSlab_ID).setBlockName("DarkCobble Stone DoubleSlab"));
+		DarkStoneBrickSlab = (new SLABZ(DBlocksIDS.DarkStoneBrickSlab_ID,33, false, DBlocksIDS.DarkStoneBrickSlab_ID, DBlocksIDS.DarkStoneBrickDSlab_ID).setBlockName("DarkStone Brick Slab"));
+		DarkStoneBrickDSlab = (new SLABZ(DBlocksIDS.DarkStoneBrickDSlab_ID, 33, true, DBlocksIDS.DarkStoneBrickSlab_ID, DBlocksIDS.DarkStoneBrickDSlab_ID).setBlockName("DarkStone Brick DoubleSlab"));
 		
 	
 
-		//LightStoneSlab = (new SLABZ(DBlocksIDS.LightStoneSlab_ID, 1, false, DBlocksIDS.LightStoneDSlab_ID, DBlocksIDS.LightStoneDSlab_ID));
-		//LightStoneDSlab = (new SLABZ(DBlocksIDS.LightStoneDSlab_ID, 1, true, DBlocksIDS.LightStoneSlab_ID, DBlocksIDS.LightStoneDSlab_ID));
-		//LightCobbleStoneSlab = (new SLABZ(DBlocksIDS.LightCobbleStoneSlab_ID, 18, false, DBlocksIDS.LightCobbleStoneSlab_ID, DBlocksIDS.LightCobbleStoneDSlab_ID));
-		//LightCobbleStoneDSlab = (new SLABZ(DBlocksIDS.LightCobbleStoneDSlab_ID, 18, true, DBlocksIDS.LightCobbleStoneSlab_ID, DBlocksIDS.LightCobbleStoneDSlab_ID));
-		//LightStoneBrickSlab = (new SLABZ(DBlocksIDS.LightStoneBrickSlab_ID,34, false, DBlocksIDS.LightStoneBrickSlab_ID, DBlocksIDS.LightStoneBrickDSlab_ID));
-		//LightStoneBrickDSlab = (new SLABZ(DBlocksIDS.LightStoneBrickDSlab_ID, 34, true, DBlocksIDS.LightStoneBrickSlab_ID, DBlocksIDS.LightStoneBrickDSlab_ID));
+		LightStoneSlab = (new SLABZ(DBlocksIDS.LightStoneSlab_ID, 0, false, DBlocksIDS.LightStoneSlab_ID, DBlocksIDS.LightStoneDSlab_ID).setBlockName("LightStone Slab"));
+		LightStoneDSlab = (new SLABZ(DBlocksIDS.LightStoneDSlab_ID, 0, true, DBlocksIDS.LightStoneSlab_ID, DBlocksIDS.LightStoneDSlab_ID).setBlockName("LightStone DoubleSlab"));
+		LightCobbleStoneSlab = (new SLABZ(DBlocksIDS.LightCobbleStoneSlab_ID, 16, false, DBlocksIDS.LightCobbleStoneSlab_ID, DBlocksIDS.LightCobbleStoneDSlab_ID).setBlockName("LightCobble Stone Slab"));
+		LightCobbleStoneDSlab = (new SLABZ(DBlocksIDS.LightCobbleStoneDSlab_ID, 16, true, DBlocksIDS.LightCobbleStoneSlab_ID, DBlocksIDS.LightCobbleStoneDSlab_ID).setBlockName("LightCobble Stone DoubleSlab"));
+		LightStoneBrickSlab = (new SLABZ(DBlocksIDS.LightStoneBrickSlab_ID,32, false, DBlocksIDS.LightStoneBrickSlab_ID, DBlocksIDS.LightStoneBrickDSlab_ID).setBlockName("LightStone Brick Slab"));
+		LightStoneBrickDSlab = (new SLABZ(DBlocksIDS.LightStoneBrickDSlab_ID, 32, true, DBlocksIDS.LightStoneBrickSlab_ID, DBlocksIDS.LightStoneBrickDSlab_ID).setBlockName("LightStone Brick DoubleSlab"));
 		
 		
 		
@@ -153,19 +153,19 @@ public class DBlocksReg
 		GameRegistry.registerBlock(CitrineLampON);
 		
 		
-		//GameRegistry.registerBlock(DarkStoneSlab);
-		//GameRegistry.registerBlock(DarkStoneDSlab);
-		//GameRegistry.registerBlock(DarkCobbleStoneSlab);
-		//GameRegistry.registerBlock(DarkCobbleStoneDSlab);
-		//GameRegistry.registerBlock(DarkStoneBrickSlab);
-		//GameRegistry.registerBlock(DarkStoneBrickDSlab);
+		GameRegistry.registerBlock(DarkStoneSlab);
+		GameRegistry.registerBlock(DarkStoneDSlab);
+		GameRegistry.registerBlock(DarkCobbleStoneSlab);
+		GameRegistry.registerBlock(DarkCobbleStoneDSlab);
+		GameRegistry.registerBlock(DarkStoneBrickSlab);
+		GameRegistry.registerBlock(DarkStoneBrickDSlab);
 		
-		//GameRegistry.registerBlock(LightStoneSlab);
-		//GameRegistry.registerBlock(LightStoneDSlab);
-		//GameRegistry.registerBlock(LightCobbleStoneSlab);
-		//GameRegistry.registerBlock(LightCobbleStoneDSlab);
-		//GameRegistry.registerBlock(LightStoneBrickSlab);
-		//GameRegistry.registerBlock(LightStoneBrickDSlab);
+		GameRegistry.registerBlock(LightStoneSlab);
+		GameRegistry.registerBlock(LightStoneDSlab);
+		GameRegistry.registerBlock(LightCobbleStoneSlab);
+		GameRegistry.registerBlock(LightCobbleStoneDSlab);
+		GameRegistry.registerBlock(LightStoneBrickSlab);
+		GameRegistry.registerBlock(LightStoneBrickDSlab);
 		
 		
 		
@@ -209,20 +209,20 @@ public class DBlocksReg
 		LanguageRegistry.addName(CitrineLampON, "Powered Citrine Lamp");
 		
 		
-		//LanguageRegistry.addName(DarkStoneSlab, "DarkStone Slab");
-		//LanguageRegistry.addName(DarkStoneDSlab, "DarkStone DoubleSlab");
-		//LanguageRegistry.addName(DarkCobbleStoneSlab, "DarkCobble Stone Slab");
-		//LanguageRegistry.addName(DarkCobbleStoneDSlab, "DarkCobble Stone DoubleSlab");
-		//LanguageRegistry.addName(DarkStoneBrickSlab, "DarkStone Brick Slab");
-		//LanguageRegistry.addName(DarkStoneBrickDSlab, "DarkStone Brick DoubleSlab");
+		LanguageRegistry.addName(DarkStoneSlab, "DarkStone Slab");
+		LanguageRegistry.addName(DarkStoneDSlab, "DarkStone DoubleSlab");
+		LanguageRegistry.addName(DarkCobbleStoneSlab, "DarkCobble Stone Slab");
+		LanguageRegistry.addName(DarkCobbleStoneDSlab, "DarkCobble Stone DoubleSlab");
+		LanguageRegistry.addName(DarkStoneBrickSlab, "DarkStone Brick Slab");
+		LanguageRegistry.addName(DarkStoneBrickDSlab, "DarkStone Brick DoubleSlab");
 		
 		
-		//LanguageRegistry.addName(LightStoneSlab, "LightStone Slab");
-		//LanguageRegistry.addName(LightStoneDSlab, "LightStone DoubleSlab");
-		//LanguageRegistry.addName(LightCobbleStoneSlab, "LightCobble Stone Slab");
-		//LanguageRegistry.addName(LightCobbleStoneDSlab, "LightCobble Stone DoubleSlab");
-		//LanguageRegistry.addName(LightStoneBrickSlab, "LightStone Brick Slab");
-		//LanguageRegistry.addName(LightStoneBrickDSlab, "LightStone Brick DoubleSlab");
+		LanguageRegistry.addName(LightStoneSlab, "LightStone Slab");
+		LanguageRegistry.addName(LightStoneDSlab, "LightStone DoubleSlab");
+		LanguageRegistry.addName(LightCobbleStoneSlab, "LightCobble Stone Slab");
+		LanguageRegistry.addName(LightCobbleStoneDSlab, "LightCobble Stone DoubleSlab");
+		LanguageRegistry.addName(LightStoneBrickSlab, "LightStone Brick Slab");
+		LanguageRegistry.addName(LightStoneBrickDSlab, "LightStone Brick DoubleSlab");
 		
 		
 		LanguageRegistry.addName(NetherAmethyst, "Nether Amethyst");

@@ -8,14 +8,14 @@ import net.minecraft.src.Item;
 
 
 
-public class AmethystDust extends Item
+public class LampFrame extends Item
 {
-        protected AmethystDust(int par1)
+        protected LampFrame(int par1)
         {
                 super(par1);
-              
+                
+              setIconCoord(15, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setIconCoord(2, 0);
               setTabToDisplayOn(CreativeTabs.tabMaterials);
         }
 }	

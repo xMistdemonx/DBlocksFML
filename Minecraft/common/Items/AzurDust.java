@@ -8,14 +8,14 @@ import net.minecraft.src.Item;
 
 
 
-public class AmethystDust extends Item
+public class AzurDust extends Item
 {
-        protected AmethystDust(int par1)
+        protected AzurDust(int par1)
         {
                 super(par1);
-              
+                
+              setIconCoord(0, 0);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setIconCoord(2, 0);
               setTabToDisplayOn(CreativeTabs.tabMaterials);
         }
 }	

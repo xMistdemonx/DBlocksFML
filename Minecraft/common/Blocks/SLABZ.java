@@ -1,4 +1,4 @@
-/*package DBlocks.Blocks;
+package DBlocks.Blocks;
 
 import java.util.List;
 import java.util.Random;
@@ -158,4 +158,3 @@ return iblockaccess.getBlockId(i, j, k) != blockID;
 }
 }
 }
-*/

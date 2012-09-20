@@ -8,14 +8,14 @@ import net.minecraft.src.Item;
 
 
 
-public class AmethystDust extends Item
+public class WoodFrameStrip extends Item
 {
-        protected AmethystDust(int par1)
+        protected WoodFrameStrip(int par1)
         {
                 super(par1);
-              
+                
+              setIconCoord(14, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setIconCoord(2, 0);
               setTabToDisplayOn(CreativeTabs.tabMaterials);
         }
 }	

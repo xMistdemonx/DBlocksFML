@@ -30,7 +30,7 @@ public class DBlocksBase {
 	
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event) {
-		// Stub Method
+		
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		
 	}
