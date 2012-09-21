@@ -21,7 +21,7 @@ public class NetherAmethyst extends Block {
 	
 	public int idDropped(int par1, Random raandom, int par2)
 {
-return DBlocksIDS.NetherAmethyst_BLOCK_ID;
+return DBlocksIDS.AmethystDust_ID;
 }
 	
 	

@@ -24,6 +24,7 @@ public class DBlocksIDS {
 	public static int CitrineBlock_BLOCK_ID;
 	public static int CitrineLamp_BLOCK_ID;
 	public static int CitrineLampON_BLOCK_ID;
+	public static int LavaStone_BLOCK_ID;
 	
 	
 	public static int DarkStoneSlab_ID;

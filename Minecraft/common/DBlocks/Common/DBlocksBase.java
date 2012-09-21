@@ -3,6 +3,8 @@ package DBlocks.Common;
 import DBlocks.Blocks.DBlocksReg;
 import DBlocks.Handlers.ConfigHandler;
 import DBlocks.Items.DBlocksItemReg;
+import DBlocks.MyGen.WorldGeneratorDBlocks;
+import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -13,6 +15,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 
 @Mod(modid="DBlocks", name="DBlocks", version="0.0.1")
@@ -41,7 +44,8 @@ public class DBlocksBase {
 		DBlocksReg.Init();
 		DBlocksItemReg.Init();
 		Recipes.Init();
-		
+		Smelting.Init();
+		GameRegistry.registerWorldGenerator(new WorldGeneratorDBlocks());
 		
 	}
 																					

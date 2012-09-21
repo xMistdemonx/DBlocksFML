@@ -28,6 +28,7 @@ public class DBlocksReg
 	public static Block CitrineBlock;
 	public static Block CitrineLamp;
 	public static Block CitrineLampON;
+	public static Block LavaStone;
 	
 	
 	
@@ -85,6 +86,7 @@ public class DBlocksReg
 		CitrineBlock = (new CitrineBlock(DBlocksIDS.CitrineBlock_BLOCK_ID));
 		CitrineLamp = (new CitrineLamp(DBlocksIDS.CitrineLamp_BLOCK_ID, 35, false));
 		CitrineLampON = (new CitrineLamp(DBlocksIDS.CitrineLampON_BLOCK_ID, 51, true));
+		LavaStone = (new LavaStone(DBlocksIDS.LavaStone_BLOCK_ID));
 		
 		
 		
@@ -151,6 +153,7 @@ public class DBlocksReg
 		GameRegistry.registerBlock(CitrineBlock);
 		GameRegistry.registerBlock(CitrineLamp);
 		GameRegistry.registerBlock(CitrineLampON);
+		GameRegistry.registerBlock(LavaStone);
 		
 		
 		GameRegistry.registerBlock(DarkStoneSlab);
@@ -207,6 +210,7 @@ public class DBlocksReg
 		LanguageRegistry.addName(CitrineBlock, "Citrine Block");
 		LanguageRegistry.addName(CitrineLamp, "Citrine Lamp");
 		LanguageRegistry.addName(CitrineLampON, "Powered Citrine Lamp");
+		LanguageRegistry.addName(LavaStone, "Lava Stone");
 		
 		
 		LanguageRegistry.addName(DarkStoneSlab, "DarkStone Slab");

@@ -44,6 +44,7 @@ public class ConfigHandler {
 			DBlocksIDS.CitrineBlock_BLOCK_ID = config.getOrCreateIntProperty("CitrineBlock_BLOCK_ID", "BLOCKS", 215).getInt(215);
 			DBlocksIDS.CitrineLamp_BLOCK_ID = config.getOrCreateIntProperty("CitrineLamp_BLOCK_ID", "BLOCKS", 216).getInt(216);
 			DBlocksIDS.CitrineLampON_BLOCK_ID = config.getOrCreateIntProperty("CitrineLampON_BLOCK_ID", "BLOCKS", 217).getInt(217);
+			DBlocksIDS.LavaStone_BLOCK_ID = config.getOrCreateIntProperty("LavaStone_BLOCK_ID", "BLOCKS", 218).getInt(218);
 			
 			
 			
