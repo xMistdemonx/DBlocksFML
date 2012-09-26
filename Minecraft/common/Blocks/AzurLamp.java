@@ -21,7 +21,6 @@ public class AzurLamp extends Block {
 		this.setStepSound(soundGlassFootstep);
 		this.setHardness(0.3F);
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setBlockName("Azur Lamp");
 		
 		
 			

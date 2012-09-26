@@ -27,7 +27,7 @@ public class DarkStoneBrick extends Block {
 
 	
 	public int idDropped(int par1, Random random, int par2) {
-		return DBlocksIDS.NetherGold_BLOCK_ID;
+		return DBlocksIDS.DarkStoneBrick_BLOCK_ID;
 	
 	
 	

@@ -30,6 +30,22 @@ public class DBlocksReg
 	public static Block CitrineLampON;
 	public static Block LavaStone;
 	
+
+	public static Block Topaz;
+	public static Block TopazBlock;
+	public static Block TopazLamp;
+	public static Block TopazLampON;
+	
+	public static Block Peridot;
+	public static Block PeridotBlock;
+	public static Block PeridotLamp;
+	public static Block PeridotLampON;
+	
+	public static Block Aquamarine;
+	public static Block AquamarineBlock;
+	public static Block AquamarineLamp;
+	public static Block AquamarineLampON;
+	
 	//RENDER--------------------------------
 	public static Block Grinder;
 	public static Block RecordPlayer;
@@ -56,6 +72,9 @@ public class DBlocksReg
 	public static Block NetherAmethyst;
 	public static Block NetherAzurite;
 	public static Block NetherCitrine;
+	public static Block NetherTopaz;
+	public static Block NetherPeridot;
+	public static Block NetherAquamarine;
 	
 	
 	// Vanilla---------------------------------------------
@@ -79,21 +98,39 @@ public class DBlocksReg
 		LightStoneBrick = (new LightStoneBrick(DBlocksIDS.LightStoneBrick_BLOCK_ID));
 		Azurite = (new Azurite(DBlocksIDS.Azurite_BLOCK_ID));
 		AzurBlock = (new AzurBlock(DBlocksIDS.AzurBlock_BLOCK_ID));
-		AzurLamp = (new AzurLamp(DBlocksIDS.AzurLamp_BLOCK_ID, 34, false));
-		AzurLampON = (new AzurLamp(DBlocksIDS.AzurLampON_BLOCK_ID, 50, true));
+		AzurLamp = (new AzurLamp(DBlocksIDS.AzurLamp_BLOCK_ID, 34, false).setBlockName("Azur Lamp"));
+		AzurLampON = (new AzurLamp(DBlocksIDS.AzurLampON_BLOCK_ID, 50, true).setBlockName("Powered Azur Lamp"));
 		Amethyst = (new Amethyst(DBlocksIDS.Amethyst_BLOCK_ID));
 		AmethystBlock = (new AmethystBlock(DBlocksIDS.AmethystBlock_BLOCK_ID));
-		AmethystLamp = (new AmethystLamp(DBlocksIDS.AmethystLamp_BLOCK_ID, 36, false));
-		AmethystLampON = (new AmethystLamp(DBlocksIDS.AmethystLampON_BLOCK_ID, 52, true));
+		AmethystLamp = (new AmethystLamp(DBlocksIDS.AmethystLamp_BLOCK_ID, 36, false).setBlockName("Amethyst Lamp"));
+		AmethystLampON = (new AmethystLamp(DBlocksIDS.AmethystLampON_BLOCK_ID, 52, true).setBlockName("Powered Amethyst Lamp"));
 		Citrine = (new Citrine(DBlocksIDS.Citrine_BLOCK_ID));
 		CitrineBlock = (new CitrineBlock(DBlocksIDS.CitrineBlock_BLOCK_ID));
-		CitrineLamp = (new CitrineLamp(DBlocksIDS.CitrineLamp_BLOCK_ID, 35, false));
-		CitrineLampON = (new CitrineLamp(DBlocksIDS.CitrineLampON_BLOCK_ID, 51, true));
+		CitrineLamp = (new CitrineLamp(DBlocksIDS.CitrineLamp_BLOCK_ID, 35, false).setBlockName("Citrine Lamp"));
+		CitrineLampON = (new CitrineLamp(DBlocksIDS.CitrineLampON_BLOCK_ID, 51, true).setBlockName("Powered Citrine Lamp"));
 		LavaStone = (new LavaStone(DBlocksIDS.LavaStone_BLOCK_ID));
+		
+		
+
+		Topaz = (new Topaz(DBlocksIDS.Topaz_BLOCK_ID));
+		TopazBlock = (new TopazBlock(DBlocksIDS.TopazBlock_BLOCK_ID));
+		TopazLamp = (new TopazLamp(DBlocksIDS.TopazLamp_BLOCK_ID, 37, false).setBlockName("Topaz Lamp"));
+		TopazLampON = (new TopazLamp(DBlocksIDS.TopazLampON_BLOCK_ID, 53, true).setBlockName("Powered Topaz Lamp"));
+
+		Peridot = (new Peridot(DBlocksIDS.Peridot_BLOCK_ID));
+		PeridotBlock = (new PeridotBlock(DBlocksIDS.PeridotBlock_BLOCK_ID));
+		PeridotLamp = (new PeridotLamp(DBlocksIDS.PeridotLamp_BLOCK_ID, 38, false).setBlockName("Peridot Lamp"));
+		PeridotLampON = (new PeridotLamp(DBlocksIDS.PeridotLampON_BLOCK_ID, 54, true).setBlockName("Powered Peridot Lamp"));
+
+		Aquamarine = (new Aquamarine(DBlocksIDS.Aquamarine_BLOCK_ID));
+		AquamarineBlock = (new AquamarineBlock(DBlocksIDS.AquamarineBlock_BLOCK_ID));
+		AquamarineLamp = (new AquamarineLamp(DBlocksIDS.AquamarineLamp_BLOCK_ID, 39, false).setBlockName("Aquamarine Lamp"));
+		AquamarineLampON = (new AquamarineLamp(DBlocksIDS.AquamarineLampON_BLOCK_ID, 55, true).setBlockName("Powered Aquamarine Lamp"));
+		
 		
 		//RENDER-----------------------------------------------------------
 		Grinder = new BlockGrinder(DBlocksIDS.Grinder_Block_ID);
-		RecordPlayer = new BlockGrinder(DBlocksIDS.RecordPlayer_Block_ID);
+		RecordPlayer = new RecordPlayer(DBlocksIDS.RecordPlayer_Block_ID);
 		
 		
 		
@@ -125,6 +162,9 @@ public class DBlocksReg
 		NetherAmethyst = (new NetherAmethyst(DBlocksIDS.NetherAmethyst_BLOCK_ID));
 		NetherAzurite = (new NetherAzurite(DBlocksIDS.NetherAzurite_BLOCK_ID));
 		NetherCitrine = (new NetherCitrine(DBlocksIDS.NetherCitrine_BLOCK_ID));
+		NetherTopaz = (new NetherTopaz(DBlocksIDS.NetherTopaz_BLOCK_ID));
+		NetherPeridot = (new NetherPeridot(DBlocksIDS.NetherPeridot_BLOCK_ID));
+		NetherAquamarine = (new NetherAquamarine(DBlocksIDS.NetherAquamarine_BLOCK_ID));
 		
 		
 		
@@ -162,6 +202,25 @@ public class DBlocksReg
 		GameRegistry.registerBlock(CitrineLampON);
 		GameRegistry.registerBlock(LavaStone);
 		
+		
+		
+
+		GameRegistry.registerBlock(Topaz);
+		GameRegistry.registerBlock(TopazBlock);
+		GameRegistry.registerBlock(TopazLamp);
+		GameRegistry.registerBlock(TopazLampON);
+
+		GameRegistry.registerBlock(Peridot);
+		GameRegistry.registerBlock(PeridotBlock);
+		GameRegistry.registerBlock(PeridotLamp);
+		GameRegistry.registerBlock(PeridotLampON);
+
+		GameRegistry.registerBlock(Aquamarine);
+		GameRegistry.registerBlock(AquamarineBlock);
+		GameRegistry.registerBlock(AquamarineLamp);
+		GameRegistry.registerBlock(AquamarineLampON);
+		
+		
 		GameRegistry.registerBlock(Grinder);
 		GameRegistry.registerBlock(RecordPlayer);
 		
@@ -185,6 +244,10 @@ public class DBlocksReg
 		GameRegistry.registerBlock(NetherAmethyst);
 		GameRegistry.registerBlock(NetherAzurite);
 		GameRegistry.registerBlock(NetherCitrine);	
+		
+		GameRegistry.registerBlock(NetherTopaz);
+		GameRegistry.registerBlock(NetherPeridot);
+		GameRegistry.registerBlock(NetherAquamarine);
 		
 		
 		GameRegistry.registerBlock(NetherCoal);
@@ -222,6 +285,25 @@ public class DBlocksReg
 		LanguageRegistry.addName(CitrineLampON, "Powered Citrine Lamp");
 		LanguageRegistry.addName(LavaStone, "Lava Stone");
 		
+		
+		
+		
+
+		LanguageRegistry.addName(Topaz, "Topaz");
+		LanguageRegistry.addName(TopazBlock, "TopazBlock");
+		LanguageRegistry.addName(TopazLamp, "Topaz Lamp");
+		LanguageRegistry.addName(TopazLampON, "Powered Topaz Lamp");
+
+		LanguageRegistry.addName(Peridot, "Peridot");
+		LanguageRegistry.addName(PeridotBlock, "Peridot Block");
+		LanguageRegistry.addName(PeridotLamp, "Peridot Lamp");
+		LanguageRegistry.addName(PeridotLampON, "Powered PeridotLamp");
+
+		LanguageRegistry.addName(Aquamarine, "Aquamarine");
+		LanguageRegistry.addName(AquamarineBlock, "Aquamarine Block");
+		LanguageRegistry.addName(AquamarineLamp, "Aquamarine Lamp");
+		LanguageRegistry.addName(AquamarineLampON, "Powered Aquamarine Lamp");
+		
 		LanguageRegistry.addName(Grinder, "Grinder");
 		LanguageRegistry.addName(RecordPlayer, "Record Player");
 		
@@ -245,6 +327,10 @@ public class DBlocksReg
 		LanguageRegistry.addName(NetherAmethyst, "Nether Amethyst");
 		LanguageRegistry.addName(NetherAzurite, "Nether Azurite");
 		LanguageRegistry.addName(NetherCitrine, "Nether Citrine");
+		
+		LanguageRegistry.addName(NetherTopaz, "Nether Topaz");
+		LanguageRegistry.addName(NetherPeridot, "Nether Peridot");
+		LanguageRegistry.addName(NetherAquamarine, "Nether Aquamarine");
 
 		LanguageRegistry.addName(NetherCoal, "Nether Coal");
 		LanguageRegistry.addName(NetherIron, "Nether Iron");

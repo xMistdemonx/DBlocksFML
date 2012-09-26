@@ -12,9 +12,32 @@ public class DBlocksItemReg {
 	public static Item AmethystShard;
 	public static Item AzurShard;
 	public static Item CitrineShard;
+	
+
+	public static Item TopazShard;
+	public static Item PeridotShard;
+	public static Item AquamarineShard;
+	
+	
 	public static Item AmethystDust;
 	public static Item AzurDust;
 	public static Item CitrineDust;
+	
+	
+	public static Item TopazDust;
+	public static Item PeridotDust;
+	public static Item AquamarineDust;
+	
+	
+	public static Item AmethystFragment;
+	public static Item AzurFragment;
+	public static Item CitrineFragment;
+	
+	
+	public static Item TopazFragment;
+	public static Item PeridotFragment;
+	public static Item AquamarineFragment;
+	
 	public static Item Plank;
 	public static Item WoodFrameStrip;
 	public static Item WoodFrame;
@@ -52,6 +75,16 @@ public class DBlocksItemReg {
 		CitrineShard = new CitrineShard(DBlocksIDS.CitrineShard_ID)
 		.setItemName("Citrine Shard");
 		
+		TopazShard = new TopazShard(DBlocksIDS.TopazShard_ID)
+		.setItemName("Topaz Shard");
+		
+		PeridotShard = new PeridotShard(DBlocksIDS.PeridotShard_ID)
+		.setItemName("Peridot Shard");
+		
+		
+		AquamarineShard = new AquamarineShard(DBlocksIDS.AquamarineShard_ID)
+		.setItemName("Aquamarine Shard");
+		
 		AmethystDust = new AmethystDust(DBlocksIDS.AmethystDust_ID)
 		.setItemName("Amethyst Dust");
 
@@ -61,6 +94,55 @@ public class DBlocksItemReg {
 
 		CitrineDust = new CitrineDust(DBlocksIDS.CitrineDust_ID)
 		.setItemName("Citrine Dust");
+		
+		TopazDust = new TopazDust(DBlocksIDS.TopazDust_ID)
+		.setItemName("Topaz Dust");
+		
+		PeridotDust = new PeridotDust(DBlocksIDS.PeridotDust_ID)
+		.setItemName("Peridot Dust");
+		
+		
+		AquamarineDust = new AquamarineDust(DBlocksIDS.AquamarineDust_ID)
+		.setItemName("Aquamarine Dust");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		AmethystFragment = new AmethystFragment(DBlocksIDS.AmethystFragment_ID)
+		.setItemName("Amethyst Fragment");
+
+		AzurFragment = new AzurFragment(DBlocksIDS.AzurFragment_ID)
+		.setItemName("Azur Fragment");
+
+
+		CitrineFragment = new CitrineFragment(DBlocksIDS.CitrineFragment_ID)
+		.setItemName("Citrine Fragment");
+		
+		TopazFragment = new TopazFragment(DBlocksIDS.TopazFragment_ID)
+		.setItemName("Topaz Fragment");
+		
+		PeridotFragment = new PeridotFragment(DBlocksIDS.PeridotFragment_ID)
+		.setItemName("Peridot Fragment");
+		
+		
+		AquamarineFragment = new AquamarineFragment(DBlocksIDS.AquamarineFragment_ID)
+		.setItemName("Aquamarine Fragment");
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		Plank = new Plank(DBlocksIDS.Plank_ID)
@@ -130,9 +212,35 @@ public class DBlocksItemReg {
 		LanguageRegistry.addName(AmethystShard, "Amethyst Shard");
 		LanguageRegistry.addName(AzurShard, "Azur Shard");
 		LanguageRegistry.addName(CitrineShard, "Citrine Shard");
+		
+
+		LanguageRegistry.addName(TopazShard, "Topaz Shard");
+		LanguageRegistry.addName(PeridotShard, "Peridot Shard");
+		LanguageRegistry.addName(AquamarineShard, "Aquamarine Shard");
+		
+		
 		LanguageRegistry.addName(AmethystDust, "Amethyst Dust");
 		LanguageRegistry.addName(AzurDust, "Azur Dust");
 		LanguageRegistry.addName(CitrineDust, "Citrine Dust");
+		
+
+		LanguageRegistry.addName(TopazDust, "Topaz Dust");
+		LanguageRegistry.addName(PeridotDust, "Peridot Dust");
+		LanguageRegistry.addName(AquamarineDust, "Aquamarine Dust");
+		
+		
+		
+		LanguageRegistry.addName(AmethystFragment, "Amethyst Fragment");
+		LanguageRegistry.addName(AzurFragment, "Azur Fragment");
+		LanguageRegistry.addName(CitrineFragment, "Citrine Fragment");
+		
+
+		LanguageRegistry.addName(TopazFragment, "Topaz Fragment");
+		LanguageRegistry.addName(PeridotFragment, "Peridot Fragment");
+		LanguageRegistry.addName(AquamarineFragment, "Aquamarine Fragment");
+		
+		
+		
 		LanguageRegistry.addName(Plank, "Plank");
 		LanguageRegistry.addName(WoodFrameStrip, "Wood Frame Strip");
 		LanguageRegistry.addName(WoodFrame, "Wood Frame");

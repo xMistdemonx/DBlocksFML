@@ -1,11 +1,5 @@
 package DBlocks.Common;
 
-import ic2.api.Ic2Recipes;
-
-import java.util.AbstractMap;
-import java.util.List;
-import java.util.Map;
-
 import DBlocks.Blocks.DBlocksReg;
 import DBlocks.Items.DBlocksItemReg;
 import net.minecraft.src.Block;
@@ -13,18 +7,16 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+
+
 public class Recipes 
 {
 
 	public static void Init()
 	{
-	
-	GameRegistry.addRecipe(new ItemStack(DBlocksReg.LightStoneBrick, 4), new Object[]
-	        {
-        "XX","XX", 'X', DBlocksReg.LightStone
-        });
-	
-	GameRegistry.addRecipe(new ItemStack(DBlocksReg.DarkStoneBrick, 4), new Object[]
+		
+		//Brick----------------------------------------------------------------------------------------
+GameRegistry.addRecipe(new ItemStack(DBlocksReg.DarkStoneBrick, 4), new Object[]
             {
                 "XX","XX", 'X', DBlocksReg.DarkStone
                 });
@@ -36,52 +28,85 @@ GameRegistry.addRecipe(new ItemStack(DBlocksReg.LightStoneBrick, 4), new Object[
                 });
 
 
+
+
+
+ //Lamp Crafting Blocks-------------------------------------------------------------------------------------------------
+GameRegistry.addRecipe(new ItemStack(DBlocksReg.AmethystBlock, 1), new Object[]
+        {
+            "XXX","XYX","XXX", 'X', DBlocksItemReg.AmethystDust, 'Y', Item.lightStoneDust
+            });
+
+
 GameRegistry.addRecipe(new ItemStack(DBlocksReg.AzurBlock, 1), new Object[]
             {
                 "XXX","XYX","XXX", 'X', DBlocksItemReg.AzurDust, 'Y', Item.lightStoneDust
                 });
 
 
-
-    GameRegistry.addRecipe(new ItemStack(DBlocksReg.AzurLamp, 1), new Object[]
-            {
-                "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.AzurBlock, 'Z', Item.redstone
-            });
-
-
-
-
-    GameRegistry.addRecipe(new ItemStack(DBlocksReg.CitrineLamp, 1), new Object[]
-            {
-                "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.CitrineBlock, 'Z', Item.redstone
-            });
-
-
 GameRegistry.addRecipe(new ItemStack(DBlocksReg.CitrineBlock, 1), new Object[]
             {
-                "XXX","XYX","XXX", 'X', DBlocksItemReg.CitrineDust, 'Y', Item.blazePowder
+                "XXX","XYX","XXX", 'X', DBlocksItemReg.CitrineDust, 'Y', Item.lightStoneDust
                 });
 
 
-GameRegistry.addRecipe(new ItemStack(DBlocksReg.AmethystBlock, 1), new Object[]
+
+
+GameRegistry.addRecipe(new ItemStack(DBlocksReg.TopazBlock, 1), new Object[]
             {
-                "XXX","XYX","XXX", 'X', DBlocksItemReg.AmethystDust, 'Y', Item.blazePowder
+                "XXX","XYX","XXX", 'X', DBlocksItemReg.TopazDust, 'Y', Item.lightStoneDust
                 });
 
 
+    GameRegistry.addRecipe(new ItemStack(DBlocksReg.PeridotBlock, 1), new Object[]
+                {
+                    "XXX","XYX","XXX", 'X', DBlocksItemReg.PeridotDust, 'Y', Item.lightStoneDust
+                    });
 
 
-    GameRegistry.addRecipe(new ItemStack(DBlocksReg.AmethystLamp, 1), new Object[]
+    GameRegistry.addRecipe(new ItemStack(DBlocksReg.AquamarineBlock, 1), new Object[]
+                {
+                    "XXX","XYX","XXX", 'X', DBlocksItemReg.AquamarineDust, 'Y', Item.lightStoneDust
+                    });
+
+
+ //Lamps--------------------------------------------------------------------------------------------------------------
+GameRegistry.addRecipe(new ItemStack(DBlocksReg.AzurLamp, 1), new Object[]
+        {
+            "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.AzurBlock, 'Z', Item.redstone
+        });
+
+
+GameRegistry.addRecipe(new ItemStack(DBlocksReg.CitrineLamp, 1), new Object[]
+        {
+            "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.CitrineBlock, 'Z', Item.redstone
+        });
+
+GameRegistry.addRecipe(new ItemStack(DBlocksReg.AmethystLamp, 1), new Object[]
             {
                 "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.AmethystBlock, 'Z', Item.redstone
+            });    
+GameRegistry.addRecipe(new ItemStack(DBlocksReg.TopazLamp, 1), new Object[]
+        {
+            "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.TopazBlock, 'Z', Item.redstone
+        });
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksReg.PeridotLamp, 1), new Object[]
+            {
+                "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.PeridotBlock, 'Z', Item.redstone
+            });
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksReg.AquamarineLamp, 1), new Object[]
+            {
+                "ZXZ","XYX","ZXZ", 'X', DBlocksItemReg.LampFrame, 'Y', DBlocksReg.AquamarineBlock, 'Z', Item.redstone
             });
 
 
 
 
 
-//Recipes Items---------------------------------------------------------------
 
+//Items---------------------------------------------------------------
     GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.Plank, 8), new Object[]
             {
                 "X", 'X', Block.planks
@@ -100,6 +125,48 @@ GameRegistry.addRecipe(new ItemStack(DBlocksReg.AmethystBlock, 1), new Object[]
     GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.LampFrame, 1), new Object[]
             {
                 " X ","XYX"," X ", 'X', DBlocksItemReg.WoodFrame, 'Y', Block.glass
+            });
+    
+    
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.AmethystShard, 1), new Object[]
+            {
+                "XXX","XXX","XXX", 'X', DBlocksItemReg.AmethystFragment
+            });
+    
+    
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.AzurShard, 1), new Object[]
+            {
+                "XXX","XXX","XXX", 'X', DBlocksItemReg.AzurFragment
+            });
+    
+    
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.CitrineShard, 1), new Object[]
+            {
+                "XXX","XXX","XXX", 'X', DBlocksItemReg.CitrineFragment
+            });
+    
+    
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.TopazShard, 1), new Object[]
+            {
+                "XXX","XXX","XXX", 'X', DBlocksItemReg.TopazFragment
+            });
+    
+    
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.PeridotShard, 1), new Object[]
+            {
+                "XXX","XXX","XXX", 'X', DBlocksItemReg.PeridotFragment
+            });
+    
+    
+    
+    GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.AquamarineShard, 1), new Object[]
+            {
+                "XXX","XXX","XXX", 'X', DBlocksItemReg.AquamarineFragment
             });
 
 
@@ -177,12 +244,6 @@ GameRegistry.addRecipe(new ItemStack(DBlocksItemReg.LSSw, 1), new Object[]
    
 
 
-
-
-
-
-
-
 //Slabs----------------------------------------------------------------------
 
 GameRegistry.addRecipe(new ItemStack(DBlocksReg.LightStoneBrickSlab, 6), new Object[]
@@ -215,9 +276,7 @@ GameRegistry.addRecipe(new ItemStack(DBlocksReg.DarkStoneSlab, 6), new Object[]
                 "XXX", 'X', DBlocksReg.DarkStone
                 });
 
-
-
-
+		
 
 
 		}

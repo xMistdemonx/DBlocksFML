@@ -26,6 +26,24 @@ public class DBlocksIDS {
 	public static int CitrineLampON_BLOCK_ID;
 	public static int LavaStone_BLOCK_ID;
 	
+
+	public static int Topaz_BLOCK_ID;
+	public static int TopazBlock_BLOCK_ID;
+	public static int TopazLamp_BLOCK_ID;
+	public static int TopazLampON_BLOCK_ID;
+	
+
+	public static int Peridot_BLOCK_ID;
+	public static int PeridotBlock_BLOCK_ID;
+	public static int PeridotLamp_BLOCK_ID;
+	public static int PeridotLampON_BLOCK_ID;
+	
+
+	public static int Aquamarine_BLOCK_ID;
+	public static int AquamarineBlock_BLOCK_ID;
+	public static int AquamarineLamp_BLOCK_ID;
+	public static int AquamarineLampON_BLOCK_ID;
+	
 	
 	public static int DarkStoneSlab_ID;
 	public static int DarkStoneDSlab_ID;
@@ -47,6 +65,9 @@ public class DBlocksIDS {
 	public static int NetherAmethyst_BLOCK_ID;
 	public static int NetherAzurite_BLOCK_ID;
 	public static int NetherCitrine_BLOCK_ID;
+	public static int NetherTopaz_BLOCK_ID;
+	public static int NetherPeridot_BLOCK_ID;
+	public static int NetherAquamarine_BLOCK_ID;
 	
 
 	public static int NetherCoal_BLOCK_ID;
@@ -62,9 +83,32 @@ public class DBlocksIDS {
 	public static int AmethystShard_ID;
 	public static int AzurShard_ID;
 	public static int CitrineShard_ID;
+	
+
+	public static int TopazShard_ID;
+	public static int PeridotShard_ID;
+	public static int AquamarineShard_ID;
+	
+
+	public static int TopazDust_ID;
+	public static int PeridotDust_ID;
+	public static int AquamarineDust_ID;
+	
 	public static int AmethystDust_ID;
 	public static int AzurDust_ID;
 	public static int CitrineDust_ID;
+	
+	
+
+	public static int TopazFragment_ID;
+	public static int PeridotFragment_ID;
+	public static int AquamarineFragment_ID;
+	
+	public static int AmethystFragment_ID;
+	public static int AzurFragment_ID;
+	public static int CitrineFragment_ID;
+	
+	
 	public static int Plank_ID;
 	public static int WoodFrameStrip_ID;
 	public static int WoodFrame_ID;

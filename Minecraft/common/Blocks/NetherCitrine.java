@@ -11,6 +11,8 @@ import net.minecraft.src.Material;
 import net.minecraft.src.World;
 
 public class NetherCitrine extends Block {
+public Random chance = new Random();
+	public int c;
 
 	public NetherCitrine (int id) {
 		super(id, 249, Material.rock);
@@ -26,13 +28,22 @@ public class NetherCitrine extends Block {
 		return CommonProxy.BLOCK_PNG;
 	}
 
-		
-		public int quantityDropped(Random random)
-		{
-			return 1 + random.nextInt(8);
-			}
 
-		public int idDropped(int par1, Random random, int par2) {
-		return DBlocksItemReg.CitrineShard.shiftedIndex;
+	
+	public int quantityDropped(Random random)
+	{
+		return random.nextInt(3) + 1;
+		}
+	
+public int idDropped(int par1, Random random, int par2) {
+	
+c = chance.nextInt(10);
+if (c == 3){
+	
+	
+	return DBlocksItemReg.CitrineShard.shiftedIndex;
+	}else{
+		return DBlocksItemReg.CitrineFragment.shiftedIndex;
+	}
 	}
 }

@@ -10,19 +10,16 @@ import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.Material;
 import net.minecraft.src.World;
 
-public class Citrine extends Block {
-public Random chance = new Random();
-	public int c;
+public class PeridotBlock extends Block {
 
-	public Citrine (int id) {
-		super(id, 3, Material.rock);
+	public PeridotBlock (int id) {
+		super(id, 22, Material.rock);
 		this.setHardness(3.5F);
 		this.setResistance(10.0F);
 		this.setStepSound(soundStoneFootstep);
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setBlockName("Citrine");
+		this.setBlockName("Peridot Block");
 	}
-	
 	
 	@Override
 	public String getTextureFile () {
@@ -30,21 +27,8 @@ public Random chance = new Random();
 	}
 
 
-	
-	public int quantityDropped(Random random)
-	{
-		return random.nextInt(3) + 1;
-		}
-	
-public int idDropped(int par1, Random random, int par2) {
-	
-c = chance.nextInt(20);
-if (c == 3){
-	
-	
-	return DBlocksItemReg.CitrineShard.shiftedIndex;
-	}else{
-		return DBlocksItemReg.CitrineFragment.shiftedIndex;
-	}
+
+		public int idDropped(int par1, Random random, int par2) {
+		return DBlocksIDS.Peridot_BLOCK_ID;
 	}
 }

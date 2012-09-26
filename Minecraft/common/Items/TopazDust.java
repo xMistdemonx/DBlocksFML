@@ -2,23 +2,20 @@ package DBlocks.Items;
 
 import DBlocks.Common.CommonProxy;
 import net.minecraft.src.CreativeTabs;
-import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.World;
 
 
 
 
 
-public class AmethystDust extends Item
+public class TopazDust extends Item
 {
-        protected AmethystDust(int par1)
+        protected TopazDust(int par1)
         {
                 super(par1);
-              
+                
+              setIconCoord(3, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setIconCoord(2, 1);
               setTabToDisplayOn(CreativeTabs.tabMaterials);
         }
-}	
+}

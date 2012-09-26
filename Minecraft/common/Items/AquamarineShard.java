@@ -12,16 +12,20 @@ import net.minecraft.src.ItemStack;
 
 
 
-public class AzurShard extends Item
+public class AquamarineShard extends Item
 {
-        protected AzurShard(int par1)
+        protected AquamarineShard(int par1)
         {
                 super(par1);
-                
-              setIconCoord(0, 0);
+              
               setTextureFile(CommonProxy.ITEMS_PNG);
+              setIconCoord(5, 0);
               setTabToDisplayOn(CreativeTabs.tabMaterials);
         }
+        
+        
+        
+        
         
         @SideOnly(Side.CLIENT)
         public boolean hasEffect(ItemStack par1ItemStack)

@@ -44,6 +44,7 @@ public class DBlocksBase {
 		DBlocksReg.Init();
 		DBlocksItemReg.Init();
 		Recipes.Init();
+		//RecipesIC2.Init();
 		Smelting.Init();
 		GameRegistry.registerWorldGenerator(new WorldGeneratorDBlocks());
 		

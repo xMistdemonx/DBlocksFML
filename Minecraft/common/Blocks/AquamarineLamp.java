@@ -12,19 +12,18 @@ import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.Material;
 import net.minecraft.src.World;
 
-public class CitrineLamp extends Block {
+public class AquamarineLamp extends Block {
 
 	public final boolean powered;
 	
-	public CitrineLamp (int id, int t, boolean par2) {
+	public AquamarineLamp (int id, int t, boolean par2) {
 		super(id, t, Material.glass);
 		this.setStepSound(soundGlassFootstep);
 		this.setHardness(0.3F);
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		
 		
-		
-		
+			
 		
 		
 		
@@ -38,7 +37,7 @@ public class CitrineLamp extends Block {
 	
 	public int idDropped(int par1, Random raandom, int par2)
 {
-return DBlocksIDS.CitrineLamp_BLOCK_ID;
+return DBlocksIDS.AquamarineLamp_BLOCK_ID;
 }
 	
 	
@@ -61,7 +60,7 @@ par1World.scheduleBlockUpdate(par2, par3, par4, this.blockID, 4);
 }
 else if (!this.powered && par1World.isBlockIndirectlyGettingPowered(par2, par3, par4))
 {
-par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.CitrineLampON.blockID);
+par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.AquamarineLampON.blockID);
 }
 }
 
@@ -80,7 +79,7 @@ par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.CitrineLampON.blockID);
             }
             else if (!this.powered && par1World.isBlockIndirectlyGettingPowered(par2, par3, par4))
             {
-                par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.CitrineLampON.blockID);
+                par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.AquamarineLampON.blockID);
             }
         }
     }
@@ -92,7 +91,7 @@ par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.CitrineLampON.blockID);
     {
         if (!par1World.isRemote && this.powered && !par1World.isBlockIndirectlyGettingPowered(par2, par3, par4))
         {
-            par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.CitrineLamp.blockID);
+            par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.AquamarineLamp.blockID);
         }
     }
 
@@ -105,6 +104,6 @@ par1World.setBlockWithNotify(par2, par3, par4,DBlocksReg.CitrineLampON.blockID);
 */
     public int idPicked(World par1World, int par2, int par3, int par4)
     {
-        return DBlocksReg.CitrineLamp.blockID;
+        return DBlocksReg.AquamarineLamp.blockID;
     }
 }
