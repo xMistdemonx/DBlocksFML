@@ -16,6 +16,6 @@ public class PeridotFragment extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(4, 2);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

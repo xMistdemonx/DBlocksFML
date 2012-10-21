@@ -16,6 +16,6 @@ public class CitrineDust extends Item
                 
               setIconCoord(1, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }	

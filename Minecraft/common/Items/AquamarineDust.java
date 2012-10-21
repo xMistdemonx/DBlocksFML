@@ -16,6 +16,6 @@ public class AquamarineDust extends Item
                 
               setIconCoord(5, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

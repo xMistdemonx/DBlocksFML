@@ -16,6 +16,6 @@ public class AmethystFragment extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(2, 2);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }	

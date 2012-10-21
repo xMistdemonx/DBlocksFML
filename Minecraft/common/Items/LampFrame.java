@@ -16,6 +16,6 @@ public class LampFrame extends Item
                 
               setIconCoord(15, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }	

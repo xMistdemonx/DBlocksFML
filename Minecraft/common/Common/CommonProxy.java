@@ -3,6 +3,7 @@ package DBlocks.Common;
 import net.minecraft.src.Block;
 import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.EntityPlayer;
+import net.minecraft.src.ItemStack;
 import net.minecraft.src.Material;
 import net.minecraft.src.World;
 import cpw.mods.fml.common.network.IGuiHandler;
@@ -25,5 +26,13 @@ public class CommonProxy{
 	//Client stuff
 	public void initTiles() {
 		
+	}
+	
+/*	public VectorHelper rayTraceBlock(EntityPlayer player, double a, float b) {
+		return null;
+	}*/
+	
+	public ItemStack getItemInHand(EntityPlayer player) {
+		return null;
 	}
 }

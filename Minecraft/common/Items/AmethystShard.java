@@ -1,12 +1,23 @@
 package DBlocks.Items;
 
+import java.util.Random;
+
 import cpw.mods.fml.common.Side;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.asm.SideOnly;
 import DBlocks.Common.CommonProxy;
 import net.minecraft.src.CreativeTabs;
+import net.minecraft.src.Entity;
+import net.minecraft.src.EntityLightningBolt;
+import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.EnumRarity;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
+import net.minecraft.src.MathHelper;
+import net.minecraft.src.MovingObjectPosition;
+import net.minecraft.src.Potion;
+import net.minecraft.src.PotionEffect;
+import net.minecraft.src.World;
 
 
 
@@ -14,32 +25,18 @@ import net.minecraft.src.ItemStack;
 
 public class AmethystShard extends Item
 {
-        protected AmethystShard(int par1)
+	//@SidedProxy(clientSide="DBlocks.ClientProxy", serverSide="DBlocks.common.CommonProxy")
+	public static CommonProxy proxy;
+		
+        public AmethystShard(int par1)
         {
                 super(par1);
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(2, 0);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
+             
         }
+     
         
-        
-        
-        
-        
-        @SideOnly(Side.CLIENT)
-        public boolean hasEffect(ItemStack par1ItemStack)
-        {
-            return true;
-        }
-
-        @SideOnly(Side.CLIENT)
-
-        /**
-         * Return an item rarity from EnumRarity
-         */
-        public EnumRarity getRarity(ItemStack par1ItemStack)
-        {
-            return EnumRarity.rare;
-        }
 }	

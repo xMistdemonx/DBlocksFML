@@ -19,6 +19,6 @@ public class AmethystDust extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(2, 1);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }	

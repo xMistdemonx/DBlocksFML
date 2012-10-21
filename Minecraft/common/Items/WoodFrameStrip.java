@@ -16,6 +16,6 @@ public class WoodFrameStrip extends Item
                 
               setIconCoord(14, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

@@ -16,6 +16,6 @@ public class AquamarineFragment extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(5, 2);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

@@ -6,6 +6,10 @@ import net.minecraft.src.Item;
 public class DBlocksIDS {
 	
 	//Block IDS
+	public static int TinOre_BLOCK_ID;
+	public static int SilverOre_BLOCK_ID;
+	public static int CopperOre_BLOCK_ID;
+	
 	public static int DarkStone_BLOCK_ID;
 	public static int DarkCobbleStone_BLOCK_ID;
 	public static int DarkStoneBrick_BLOCK_ID;
@@ -24,7 +28,6 @@ public class DBlocksIDS {
 	public static int CitrineBlock_BLOCK_ID;
 	public static int CitrineLamp_BLOCK_ID;
 	public static int CitrineLampON_BLOCK_ID;
-	public static int LavaStone_BLOCK_ID;
 	
 
 	public static int Topaz_BLOCK_ID;
@@ -70,16 +73,28 @@ public class DBlocksIDS {
 	public static int NetherAquamarine_BLOCK_ID;
 	
 
-	public static int NetherCoal_BLOCK_ID;
-	public static int NetherIron_BLOCK_ID;
-	public static int NetherGold_BLOCK_ID;
-	public static int NetherRedStone_BLOCK_ID;
-	public static int NetherDiamond_BLOCK_ID;
+
 	
-	public static int Grinder_Block_ID;
-	public static int RecordPlayer_Block_ID;
+	//public static int RecordPlayer_Block_ID;
 	
 	//Item IDS
+
+	public static int dustTin_ID;
+	public static int dustCopper_ID;
+	public static int dustSilver_ID;
+
+	public static int ingotTin_ID;
+	public static int ingotCopper_ID;
+	public static int ingotSilver_ID;
+
+	public static int AmethystGem_ID;
+	public static int AzurGem_ID;
+	public static int CitrineGem_ID;
+	public static int TopazGem_ID;
+	public static int PeridotGem_ID;
+	public static int AquamarineGem_ID;
+	
+	
 	public static int AmethystShard_ID;
 	public static int AzurShard_ID;
 	public static int CitrineShard_ID;
@@ -127,7 +142,49 @@ public class DBlocksIDS {
 	public static int LSS_ID;
 	public static int LSSw_ID;
 	
+	
+
+	public static int AzurPick_ID;
+	public static int AzurAxe_ID;
+	public static int AzurHoe_ID;
+	public static int AzurSpade_ID;
+	public static int AzurSword_ID;
+
+	public static int AmethystPick_ID;
+	public static int AmethystAxe_ID;
+	public static int AmethystHoe_ID;
+	public static int AmethystSpade_ID;
+	public static int AmethystSword_ID;
+
+	public static int CitrinePick_ID;
+	public static int CitrineAxe_ID;
+	public static int CitrineHoe_ID;
+	public static int CitrineSpade_ID;
+	public static int CitrineSword_ID;
+
+	public static int TopazPick_ID;
+	public static int TopazAxe_ID;
+	public static int TopazHoe_ID;
+	public static int TopazSpade_ID;
+	public static int TopazSword_ID;
+
+	public static int PeridotPick_ID;
+	public static int PeridotAxe_ID;
+	public static int PeridotHoe_ID;
+	public static int PeridotSpade_ID;
+	public static int PeridotSword_ID;
+
+	public static int AquamarinePick_ID;
+	public static int AquamarineAxe_ID;
+	public static int AquamarineHoe_ID;
+	public static int AquamarineSpade_ID;
+	public static int AquamarineSword_ID;
+	
+	
+	
+
+	public static int GhostShard_ID;
+	
 	//Render IDS
-	public static int Grinder_Render_ID;
 	public static int RecordPlayer_Render_ID;
 }

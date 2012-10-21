@@ -20,22 +20,8 @@ public class AzurShard extends Item
                 
               setIconCoord(0, 0);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
         
-        @SideOnly(Side.CLIENT)
-        public boolean hasEffect(ItemStack par1ItemStack)
-        {
-            return true;
-        }
 
-        @SideOnly(Side.CLIENT)
-
-        /**
-         * Return an item rarity from EnumRarity
-         */
-        public EnumRarity getRarity(ItemStack par1ItemStack)
-        {
-            return EnumRarity.rare;
-        }
 }	

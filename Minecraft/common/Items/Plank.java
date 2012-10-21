@@ -16,6 +16,6 @@ public class Plank extends Item
                 
               setIconCoord(14, 0);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }	

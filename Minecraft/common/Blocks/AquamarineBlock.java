@@ -13,7 +13,7 @@ import net.minecraft.src.World;
 public class AquamarineBlock extends Block {
 
 	public AquamarineBlock (int id) {
-		super(id, 21, Material.rock);
+		super(id, 23, Material.rock);
 		this.setHardness(3.5F);
 		this.setResistance(10.0F);
 		this.setStepSound(soundStoneFootstep);

@@ -16,6 +16,6 @@ public class AzurDust extends Item
                 
               setIconCoord(0, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

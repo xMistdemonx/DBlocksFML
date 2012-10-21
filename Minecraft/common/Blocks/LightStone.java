@@ -19,19 +19,24 @@ public class LightStone extends Block {
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setBlockName("Light Stone");
 	}
-	
+
+	@Override
+	public boolean isGenMineableReplaceable(World world, int x, int y, int z) {
+		return true;
+	}
+
 	@Override
 	public String getTextureFile () {
 		return CommonProxy.BLOCK_PNG;
 	}
 
-	
+
 	public int idDropped(int par1, Random random, int par2) {
 		return DBlocksIDS.LightCobbleStone_BLOCK_ID;
-	
-	
-	
-	
-	
+
+
+
+
+
 	}
 }

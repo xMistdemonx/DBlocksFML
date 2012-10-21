@@ -22,19 +22,19 @@ public class AmethystLamp extends Block {
 		super(id, t, Material.glass);
 		this.setStepSound(soundGlassFootstep);
 		this.setHardness(0.3F);
-		this.setCreativeTab(CreativeTabs.tabBlock);
 		
-		
-		
+		powered = par2;
+			
 		
 		
 		
 		if (par2)
 		{
 		this.setLightValue(1.0F);
+		}else{ //Else, adds the off version to the inventory
+	          setCreativeTab(CreativeTabs.tabRedstone);
 		}
-		
-		powered = par2;
+
 	}
 	
 	public int idDropped(int par1, Random raandom, int par2)

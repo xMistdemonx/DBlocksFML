@@ -1,10 +1,12 @@
 package DBlocks.Common;
 
 import DBlocks.Blocks.DBlocksReg;
+import DBlocks.GemTools.GemToolsReg;
 import DBlocks.Handlers.ConfigHandler;
 import DBlocks.Items.DBlocksItemReg;
 import DBlocks.MyGen.WorldGeneratorDBlocks;
 import cpw.mods.fml.common.IWorldGenerator;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -18,7 +20,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 
-@Mod(modid="DBlocks", name="DBlocks", version="0.0.1")
+@Mod(modid="DBlocks", name="DBlocks", version="0.1.1")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class DBlocksBase {
 	
@@ -28,7 +30,7 @@ public class DBlocksBase {
 	public static DBlocksBase instance;
 	
 	// Says where the client and server 'proxy' code is loaded.
-	@SidedProxy(clientSide="DBlocks.ClientProxy", serverSide="DBlocks.common.CommonProxy")
+	@SidedProxy(clientSide="DBlocks.ClientProxy", serverSide="DBlocks.Common.CommonProxy")
 	public static CommonProxy proxy;
 	
 	@PreInit
@@ -43,9 +45,9 @@ public class DBlocksBase {
 	{
 		DBlocksReg.Init();
 		DBlocksItemReg.Init();
+		GemToolsReg.Init();
 		Recipes.Init();
-		//RecipesIC2.Init();
-		Smelting.Init();
+		GemToolRecipes.Init();
 		GameRegistry.registerWorldGenerator(new WorldGeneratorDBlocks());
 		
 		//Proxy stuff
@@ -56,7 +58,11 @@ public class DBlocksBase {
 																					
 	@PostInit
 	public void postInit(FMLPostInitializationEvent event) {
-		// Stub Method
-		
+	
+		if(Loader.isModLoaded("IC2")) {
+			RecipesIC2.Init();
+		}else{
+			Smelting.Init();
+		}
 	}
 }

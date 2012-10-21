@@ -20,9 +20,16 @@ public class DarkStone extends Block {
 		this.setBlockName("Dark Stone");
 	}
 	
+	
+	
 	@Override
 	public String getTextureFile () {
 		return CommonProxy.BLOCK_PNG;
+	}
+	
+	@Override
+	public boolean isGenMineableReplaceable(World world, int x, int y, int z) {
+		return true;
 	}
 
 	

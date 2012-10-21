@@ -16,6 +16,6 @@ public class TopazFragment extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(3, 2);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

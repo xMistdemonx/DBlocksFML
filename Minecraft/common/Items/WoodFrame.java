@@ -16,6 +16,6 @@ public class WoodFrame extends Item
                 
               setIconCoord(15, 0);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }	

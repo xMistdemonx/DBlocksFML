@@ -1,11 +1,18 @@
-package DBlocks.Tiles;
+/*package DBlocks.Tiles;
 
 import net.minecraft.src.NBTTagCompound;
+
+
+
 import net.minecraft.src.TileEntity;
 
 public class TileRecordPlayer extends TileEntity 
 { 
 	
+	public int front = 0;
+
+
+
 	
 	@Override
 	public void readFromNBT(NBTTagCompound compound) {
@@ -16,4 +23,4 @@ public class TileRecordPlayer extends TileEntity
 	public void writeToNBT(NBTTagCompound compound) {
 		super.writeToNBT(compound);
 	}
-}
+}*/

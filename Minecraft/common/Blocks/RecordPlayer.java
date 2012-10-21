@@ -1,13 +1,17 @@
-package DBlocks.Blocks;
+/*package DBlocks.Blocks;
 
+import DBlocks.Common.CommonProxy;
 import DBlocks.Common.DBlocksIDS;
 import DBlocks.Tiles.TileRecordPlayer;
+import net.minecraft.src.Block;
 import net.minecraft.src.BlockContainer;
 import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.EntityItem;
+import net.minecraft.src.EntityLiving;
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.Material;
+import net.minecraft.src.MathHelper;
 import net.minecraft.src.TileEntity;
 import net.minecraft.src.TileEntityRecordPlayer;
 import net.minecraft.src.World;
@@ -21,7 +25,12 @@ public class RecordPlayer extends BlockContainer {
 		setCreativeTab(CreativeTabs.tabBlock);
 	}
 	
+
 	
+	@Override
+	public String getTextureFile () {
+		return CommonProxy.BLOCK_PNG;
+	}
 	@Override
 	public boolean isOpaqueCube() {
 		return false;
@@ -32,7 +41,8 @@ public class RecordPlayer extends BlockContainer {
 		return false;
 	}
 	
-	/*public boolean onBlockActivated(World world, int par2, int par3, int par4, EntityPlayer player, int par6, float par7, float par8, float par9) {
+	
+	public boolean onBlockActivated(World world, int par2, int par3, int par4, EntityPlayer player, int par6, float par7, float par8, float par9) {
 		if(world.isRemote) {
 			return true;
 		} else {
@@ -40,7 +50,7 @@ public class RecordPlayer extends BlockContainer {
 		}
 		
 		return true;
-	}*/
+	}
 	
 	
 
@@ -57,6 +67,6 @@ public class RecordPlayer extends BlockContainer {
 	@Override
 	public TileEntity createNewTileEntity(World var1) {
 		return new TileRecordPlayer();
-	}
 
 }
+}*/

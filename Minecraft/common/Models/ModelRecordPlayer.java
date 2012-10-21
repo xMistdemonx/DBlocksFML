@@ -1,4 +1,4 @@
-package DBlocks.Models;
+/*package DBlocks.Models;
 
 import net.minecraft.src.ModelBase;
 import net.minecraft.src.ModelRenderer;
@@ -207,7 +207,7 @@ public class ModelRecordPlayer extends ModelBase
     }
   
   float f5;
-  public void render(float x, float y, float z, float i)
+  public void render()
   {
 	f5 = 0.0625F;
     LegFrontLeft1.render(f5);
@@ -232,7 +232,7 @@ public class ModelRecordPlayer extends ModelBase
     TrayBase.render(f5);
     TrayEye.render(f5);
     ArmBase.render(f5);
-    setRotation(Tray, 0F, i, 0F);
+    setRotation(Tray, 0F, 0F, 0F);
     Tray.render(f5);
     ArmBase2.render(f5);
     NeddleArm.render(f5);
@@ -253,5 +253,5 @@ public class ModelRecordPlayer extends ModelBase
     super.setRotationAngles(f, f1, f2, f3, f4, f5);
   }
 
-}
+}*/
 

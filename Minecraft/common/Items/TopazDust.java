@@ -16,6 +16,6 @@ public class TopazDust extends Item
                 
               setIconCoord(3, 1);
               setTextureFile(CommonProxy.ITEMS_PNG);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

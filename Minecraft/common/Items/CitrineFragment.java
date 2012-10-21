@@ -16,6 +16,6 @@ public class CitrineFragment extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(1, 2);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }

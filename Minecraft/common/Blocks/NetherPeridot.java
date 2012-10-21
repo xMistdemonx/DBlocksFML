@@ -30,16 +30,16 @@ public Random chance = new Random();
 	
 	public int quantityDropped(Random random)
 	{
-		return random.nextInt(3) + 1;
-		}
-	
-public int idDropped(int par1, Random random, int par2) {
-	
-c = chance.nextInt(10);
-if (c == 3){
-	
-	
-	return DBlocksItemReg.PeridotShard.shiftedIndex;
+		return random.nextInt(5) + 1;
+	}
+
+	public int idDropped(int par1, Random random, int par2) {
+
+		c = chance.nextInt(10);
+		if (c == 10){
+
+
+			return DBlocksItemReg.PeridotShard.shiftedIndex;
 	}else{
 		return DBlocksItemReg.PeridotFragment.shiftedIndex;
 	}

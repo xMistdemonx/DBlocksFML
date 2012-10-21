@@ -10,25 +10,33 @@ import net.minecraft.src.Material;
 public class DBlocksReg 
 {	
 	
+
+	public static Block TinOre;
+	public static Block CopperOre;
+	public static Block SilverOre;
+	
 	public static Block DarkStone;
 	public static Block DarkCobbleStone;
 	public static Block DarkStoneBrick;
+	
 	public static Block LightStone;
 	public static Block LightCobbleStone;
 	public static Block LightStoneBrick;
+
 	public static Block Azurite;
 	public static Block AzurBlock;
 	public static Block AzurLamp;
 	public static Block AzurLampON;
+
 	public static Block Amethyst;
 	public static Block AmethystBlock;
 	public static Block AmethystLamp;
 	public static Block AmethystLampON;
+	
 	public static Block Citrine;
 	public static Block CitrineBlock;
 	public static Block CitrineLamp;
 	public static Block CitrineLampON;
-	public static Block LavaStone;
 	
 
 	public static Block Topaz;
@@ -47,8 +55,7 @@ public class DBlocksReg
 	public static Block AquamarineLampON;
 	
 	//RENDER--------------------------------
-	public static Block Grinder;
-	public static Block RecordPlayer;
+	//public static Block RecordPlayer;
 	
 	
 	//SLABZ---------------------------------
@@ -77,12 +84,7 @@ public class DBlocksReg
 	public static Block NetherAquamarine;
 	
 	
-	// Vanilla---------------------------------------------
-	public static Block NetherCoal;
-	public static Block NetherIron;
-	public static Block NetherGold;
-	public static Block NetherRedStone;
-	public static Block NetherDiamond;
+
 	
 	
 	
@@ -90,28 +92,34 @@ public class DBlocksReg
 	{
 		
 		// Blocks--------------------------------------------------------------------------------------
+
+		TinOre = (new TinOre(DBlocksIDS.TinOre_BLOCK_ID));
+		CopperOre = (new CopperOre(DBlocksIDS.CopperOre_BLOCK_ID));
+		SilverOre = (new SilverOre(DBlocksIDS.SilverOre_BLOCK_ID));
+		
 		DarkStone = (new DarkStone(DBlocksIDS.DarkStone_BLOCK_ID));
 		DarkCobbleStone = (new DarkCobbleStone(DBlocksIDS.DarkCobbleStone_BLOCK_ID));
 		DarkStoneBrick = (new DarkStoneBrick(DBlocksIDS.DarkStoneBrick_BLOCK_ID));
+		
 		LightStone = (new LightStone(DBlocksIDS.LightStone_BLOCK_ID));
 		LightCobbleStone = (new LightCobbleStone(DBlocksIDS.LightCobbleStone_BLOCK_ID));
 		LightStoneBrick = (new LightStoneBrick(DBlocksIDS.LightStoneBrick_BLOCK_ID));
+		
 		Azurite = (new Azurite(DBlocksIDS.Azurite_BLOCK_ID));
 		AzurBlock = (new AzurBlock(DBlocksIDS.AzurBlock_BLOCK_ID));
 		AzurLamp = (new AzurLamp(DBlocksIDS.AzurLamp_BLOCK_ID, 34, false).setBlockName("Azur Lamp"));
 		AzurLampON = (new AzurLamp(DBlocksIDS.AzurLampON_BLOCK_ID, 50, true).setBlockName("Powered Azur Lamp"));
+		
 		Amethyst = (new Amethyst(DBlocksIDS.Amethyst_BLOCK_ID));
 		AmethystBlock = (new AmethystBlock(DBlocksIDS.AmethystBlock_BLOCK_ID));
 		AmethystLamp = (new AmethystLamp(DBlocksIDS.AmethystLamp_BLOCK_ID, 36, false).setBlockName("Amethyst Lamp"));
 		AmethystLampON = (new AmethystLamp(DBlocksIDS.AmethystLampON_BLOCK_ID, 52, true).setBlockName("Powered Amethyst Lamp"));
+		
 		Citrine = (new Citrine(DBlocksIDS.Citrine_BLOCK_ID));
 		CitrineBlock = (new CitrineBlock(DBlocksIDS.CitrineBlock_BLOCK_ID));
 		CitrineLamp = (new CitrineLamp(DBlocksIDS.CitrineLamp_BLOCK_ID, 35, false).setBlockName("Citrine Lamp"));
 		CitrineLampON = (new CitrineLamp(DBlocksIDS.CitrineLampON_BLOCK_ID, 51, true).setBlockName("Powered Citrine Lamp"));
-		LavaStone = (new LavaStone(DBlocksIDS.LavaStone_BLOCK_ID));
 		
-		
-
 		Topaz = (new Topaz(DBlocksIDS.Topaz_BLOCK_ID));
 		TopazBlock = (new TopazBlock(DBlocksIDS.TopazBlock_BLOCK_ID));
 		TopazLamp = (new TopazLamp(DBlocksIDS.TopazLamp_BLOCK_ID, 37, false).setBlockName("Topaz Lamp"));
@@ -129,11 +137,7 @@ public class DBlocksReg
 		
 		
 		//RENDER-----------------------------------------------------------
-		Grinder = new BlockGrinder(DBlocksIDS.Grinder_Block_ID);
-		RecordPlayer = new RecordPlayer(DBlocksIDS.RecordPlayer_Block_ID);
-		
-		
-		
+		//RecordPlayer = new RecordPlayer(DBlocksIDS.RecordPlayer_Block_ID);
 		
 		
 		
@@ -156,8 +160,6 @@ public class DBlocksReg
 		
 		
 		
-		
-		
 		//Nether Blocks-----------------------------------------------------------
 		NetherAmethyst = (new NetherAmethyst(DBlocksIDS.NetherAmethyst_BLOCK_ID));
 		NetherAzurite = (new NetherAzurite(DBlocksIDS.NetherAzurite_BLOCK_ID));
@@ -168,43 +170,37 @@ public class DBlocksReg
 		
 		
 		
-		//Vanilla-----------------------------------------------------------------
-		NetherCoal = (new NetherCoal(DBlocksIDS.NetherCoal_BLOCK_ID));
-		NetherIron = (new NetherIron(DBlocksIDS.NetherIron_BLOCK_ID));
-		NetherGold = (new NetherGold(DBlocksIDS.NetherGold_BLOCK_ID));
-		NetherRedStone = (new NetherRedStone(DBlocksIDS.NetherRedStone_BLOCK_ID));
-		NetherDiamond = (new NetherDiamond(DBlocksIDS.NetherDiamond_BLOCK_ID));
-		
-		
-		
-		
-		
+
 		
 		// Block Registry---------------------------------------------------------------------
+
+		GameRegistry.registerBlock(TinOre);
+		GameRegistry.registerBlock(CopperOre);
+		GameRegistry.registerBlock(SilverOre);
 		
 		GameRegistry.registerBlock(DarkStone);
 		GameRegistry.registerBlock(DarkCobbleStone);
 		GameRegistry.registerBlock(DarkStoneBrick);
+		
 		GameRegistry.registerBlock(LightStone);
 		GameRegistry.registerBlock(LightCobbleStone);
 		GameRegistry.registerBlock(LightStoneBrick);
+		
 		GameRegistry.registerBlock(Azurite);
 		GameRegistry.registerBlock(AzurBlock);
 		GameRegistry.registerBlock(AzurLamp);
 		GameRegistry.registerBlock(AzurLampON);
+		
 		GameRegistry.registerBlock(Amethyst);
 		GameRegistry.registerBlock(AmethystBlock);
 		GameRegistry.registerBlock(AmethystLamp);
 		GameRegistry.registerBlock(AmethystLampON);
+	
 		GameRegistry.registerBlock(Citrine);
 		GameRegistry.registerBlock(CitrineBlock);
 		GameRegistry.registerBlock(CitrineLamp);
 		GameRegistry.registerBlock(CitrineLampON);
-		GameRegistry.registerBlock(LavaStone);
 		
-		
-		
-
 		GameRegistry.registerBlock(Topaz);
 		GameRegistry.registerBlock(TopazBlock);
 		GameRegistry.registerBlock(TopazLamp);
@@ -221,8 +217,7 @@ public class DBlocksReg
 		GameRegistry.registerBlock(AquamarineLampON);
 		
 		
-		GameRegistry.registerBlock(Grinder);
-		GameRegistry.registerBlock(RecordPlayer);
+		//GameRegistry.registerBlock(RecordPlayer);
 		
 		
 		GameRegistry.registerBlock(DarkStoneSlab);
@@ -244,17 +239,12 @@ public class DBlocksReg
 		GameRegistry.registerBlock(NetherAmethyst);
 		GameRegistry.registerBlock(NetherAzurite);
 		GameRegistry.registerBlock(NetherCitrine);	
-		
 		GameRegistry.registerBlock(NetherTopaz);
 		GameRegistry.registerBlock(NetherPeridot);
 		GameRegistry.registerBlock(NetherAquamarine);
 		
 		
-		GameRegistry.registerBlock(NetherCoal);
-		GameRegistry.registerBlock(NetherIron);
-		GameRegistry.registerBlock(NetherGold);
-		GameRegistry.registerBlock(NetherRedStone);
-		GameRegistry.registerBlock(NetherDiamond);
+
 
 
 		
@@ -263,32 +253,34 @@ public class DBlocksReg
 		
 		
 		// Language Registry-------------------------------------------------------------
+
+		LanguageRegistry.addName(TinOre, "Tin Ore");
+		LanguageRegistry.addName(CopperOre, "Copper Ore");
+		LanguageRegistry.addName(SilverOre, "Silver Ore");
 		
-		LanguageRegistry.addName(Amethyst, "Amethyst");
 		LanguageRegistry.addName(DarkStone, "Dark Stone");
 		LanguageRegistry.addName(DarkCobbleStone, "DarkCobble Stone");
 		LanguageRegistry.addName(DarkStoneBrick, "Dark Stone Brick");
+		
 		LanguageRegistry.addName(LightStone, "Light Stone");
 		LanguageRegistry.addName(LightCobbleStone, "LightCobble Stone");
 		LanguageRegistry.addName(LightStoneBrick, " LightStone Brick");
+		
 		LanguageRegistry.addName(Azurite, "Azurite");
 		LanguageRegistry.addName(AzurBlock, "Azur Block");
 		LanguageRegistry.addName(AzurLamp, "Azur Lamp");
 		LanguageRegistry.addName(AzurLampON, "Powered Azur Lamp");
+		
 		LanguageRegistry.addName(Amethyst, "Amethyst");
 		LanguageRegistry.addName(AmethystBlock, "Amethyst  Block");
 		LanguageRegistry.addName(AmethystLamp, "Amethyst Lamp");
 		LanguageRegistry.addName(AmethystLampON, "Powered Amethyst Lamp");
+		
 		LanguageRegistry.addName(Citrine, "Citrine");
 		LanguageRegistry.addName(CitrineBlock, "Citrine Block");
 		LanguageRegistry.addName(CitrineLamp, "Citrine Lamp");
 		LanguageRegistry.addName(CitrineLampON, "Powered Citrine Lamp");
-		LanguageRegistry.addName(LavaStone, "Lava Stone");
 		
-		
-		
-		
-
 		LanguageRegistry.addName(Topaz, "Topaz");
 		LanguageRegistry.addName(TopazBlock, "TopazBlock");
 		LanguageRegistry.addName(TopazLamp, "Topaz Lamp");
@@ -304,8 +296,7 @@ public class DBlocksReg
 		LanguageRegistry.addName(AquamarineLamp, "Aquamarine Lamp");
 		LanguageRegistry.addName(AquamarineLampON, "Powered Aquamarine Lamp");
 		
-		LanguageRegistry.addName(Grinder, "Grinder");
-		LanguageRegistry.addName(RecordPlayer, "Record Player");
+		//LanguageRegistry.addName(RecordPlayer, "Record Player");
 		
 		
 		LanguageRegistry.addName(DarkStoneSlab, "DarkStone Slab");
@@ -327,16 +318,11 @@ public class DBlocksReg
 		LanguageRegistry.addName(NetherAmethyst, "Nether Amethyst");
 		LanguageRegistry.addName(NetherAzurite, "Nether Azurite");
 		LanguageRegistry.addName(NetherCitrine, "Nether Citrine");
-		
 		LanguageRegistry.addName(NetherTopaz, "Nether Topaz");
 		LanguageRegistry.addName(NetherPeridot, "Nether Peridot");
 		LanguageRegistry.addName(NetherAquamarine, "Nether Aquamarine");
 
-		LanguageRegistry.addName(NetherCoal, "Nether Coal");
-		LanguageRegistry.addName(NetherIron, "Nether Iron");
-		LanguageRegistry.addName(NetherGold, "Nether Gold");
-		LanguageRegistry.addName(NetherRedStone, "Nether RedStone");
-		LanguageRegistry.addName(NetherDiamond, "Nether Diamond");
+
 		
 	}
 

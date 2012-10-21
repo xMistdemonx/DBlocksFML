@@ -20,26 +20,9 @@ public class PeridotShard extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(4, 0);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
         
         
-        
-        
-        
-        @SideOnly(Side.CLIENT)
-        public boolean hasEffect(ItemStack par1ItemStack)
-        {
-            return true;
-        }
-
-        @SideOnly(Side.CLIENT)
-
-        /**
-         * Return an item rarity from EnumRarity
-         */
-        public EnumRarity getRarity(ItemStack par1ItemStack)
-        {
-            return EnumRarity.rare;
-        }
+    
 }	

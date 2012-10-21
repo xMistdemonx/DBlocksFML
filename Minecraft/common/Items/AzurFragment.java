@@ -16,6 +16,6 @@ public class AzurFragment extends Item
               
               setTextureFile(CommonProxy.ITEMS_PNG);
               setIconCoord(0, 2);
-              setTabToDisplayOn(CreativeTabs.tabMaterials);
+              setCreativeTab(CreativeTabs.tabMaterials);
         }
 }
